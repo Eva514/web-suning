@@ -1,0 +1,136 @@
+/*通用样式*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    color: #333;
+    font: 12px/1.5 arial, tahoma, 宋体;
+}
+em,i{
+    font-style: normal;
+}
+img{
+    border: none;
+}
+input{
+    outline: none;
+}
+a {
+    text-decoration: none;
+    color: #666;
+}
+a:hover {
+    color: #F60;
+    text-decoration: underline;
+}
+ul {
+    list-style: none;
+}
+form{display: block;}
+@font-face {
+    font-family: ng-iconfont;
+    src: url('../font/iconfont.eot');
+    src: url('../font/iconfont.eot#iefix') format('embedded-opentype'),
+    url('../font/iconfont.woff') format('woff'),
+    url('../font/iconfont.ttf') format('truetype'),
+    url('../font/iconfont.svg#uxiconfont') format('svg');
+}
+.ng-iconfont{
+    font-family: ng-iconfont!important;
+    font-style: normal;
+}
+
+
+
+/*顶部广告样式*/
+#layout_ad{width: 100%;height: auto;background: #008CC7;}
+#top_bigAd{width: 100%;height: auto;display: block;overflow: hidden;}
+#top_ad{position: relative;display: block;overflow: hidden;width: 1190px;margin: 0 auto;}
+#top_ad a{display: block;overflow: hidden;}
+#top_ad a img{display: block;}
+#top_ad .closed{position: absolute;background: url(../img/s_pic.png) no-repeat 0 0;width: 15px;height: 15px;right: 2px;
+    top: 2px;}
+#top_ad .closed:hover{background: url(../img/s_pic.png) no-repeat -15px 0;}
+
+/*头部导航*/
+.layout_nav{width: 100%;height: 35px;background: #F5F5F5;border-bottom: 1px solid #eee;}
+.top_nav{height: 35px;line-height: 35px;width: 1190px;position: relative;margin: 0 auto;}
+.top_nav .top_nav_left{display: block;float: left;width: 65px;line-height: 33px;border: 1px #f5f5f5 solid;padding: 0 9px;}
+.top_nav .top_nav_left .arrow{position: absolute;left: 65px;top: 16px;transition: transform 0.2s ease-in 0s;}
+.top_nav .top_nav_left:hover{background: #ffffff;border: 1px #ddd solid;height: 35px;border-bottom: 0px #fff solid;
+    z-index: 998;}
+.top_nav .top_nav_left:hover .arrow{transform: rotate(180deg);}
+.top_nav .siteBox_child{display: none;position: absolute;width: 990px;height: 242px;border: 1px solid #DDDDDD;border-top: none;
+top: 35px;left: -1px;z-index: 7691;background: #ffffff;}
+.top_nav .siteBox_child dl{float: left;width: 176px;border-right: 1px solid #eee;padding-left: 20px;margin-top: 25px;}
+.top_nav .siteBox_child .dlr{border-right: none;}
+.top_nav .siteBox_child dt{font-family: "微软雅黑";height: 25px;font-size: 14px;line-height: 17px;}
+.top_nav .siteBox_child dd{display: inline-block;float: left;height: 25px;line-height: 25px;width: 78px;overflow: hidden;}
+
+.top_nav .top_nav_right{float: right;width: 661px;height: 35px;}
+.top_nav .top_nav_right a{float: left;line-height: 35px;padding: 0 10px;border: 1px #f5f5f5 solid;overflow: hidden;}
+.top_nav .top_nav_right a.h {border: 1px #ddd solid;border-bottom: 2px #fff solid;background: #fff;}
+.top_nav .top_nav_right .ng:hover{border: 1px #f5f5f5 solid;background: #f5f5f5;}
+.top_nav .top_nav_right .login_register{position: relative;float: left;height: 35px;line-height: 33px;padding: 0 10px;
+    overflow: hidden;}
+.top_nav .top_nav_right .login_register a{border: none;width: 24px;display: block;padding: 0;float: left;overflow: hidden;}
+.top_nav .top_nav_right .login_register:hover,.top_nav .top_nav_right .login_register a:hover{background: #eee;}
+.top_nav .top_nav_right .arrow{transition: transform 0.2s ease-in 0s;}
+.top_nav .top_nav_right .scrollx:hover .arrow{transform: rotate(180deg);}
+.top_nav .top_nav_right .scrollx{position: relative;display: block;float: left;}
+.top_nav .top_nav_right .scrollx:hover{background: #ffffff;border: 1px #ddd solid;height: 35px;
+    border-bottom: 0px #fff solid;z-index: 7692;}
+.top_nav .top_nav_right .scrolly{display: none;position: absolute;border: 1px solid #DDDDDD;border-top: none;top: 35px;
+    left: 0px;z-index: 7691;background: #ffffff;}
+.top_nav .top_nav_right .scrolly a{border: none;display: block;height: 30px;line-height: 30px;}
+.top_nav .top_nav_right .cartIcon{display: inline-block;font-size: 18px;line-height: 30px;width: 16px;margin-right: 6px;}
+.top_nav .top_nav_right .ng_cart span{font-size: 14px;line-height: 30px;font-family: "微软雅黑";}
+.top_nav .top_nav_right .ng_cart .circle{position: relative;display: inline-block;width: 8px;height: 16px;color: #FFFFFF;
+    background: #f7a705;border-radius: 8px;text-align: center;padding: 0 4px;top: 2px;left: -2px;}
+.top_nav .top_nav_right .ng_cart .circle .num{position: relative;font-size: 12px;line-height: 15px;top: -7px;left: 0.5px;}
+.top_nav .top_nav_right .phoneSuning .mb{font-size: 17px;line-height: 30px;display: inline-block;}
+.top_nav .top_nav_right .phoneSuning_list{width: 280px;height: 250px;}
+.top_nav .top_nav_right .phoneSuning_list .phoneSuning_left{border-right: 1px #eeeeee solid;float: left;display: inline-block;
+    height: 162px;width: 150px;margin-bottom: 10px;margin-top: 25px}
+.top_nav .top_nav_right .phoneSuning_list .phoneSuning_left p.ng_tip{height: 30px;line-height: 25px;text-align: center;}
+.top_nav .top_nav_right .phoneSuning_list .phoneSuning_left a.ng_pic{width: 132px;height: 132px;display: block;}
+.top_nav .top_nav_right .phoneSuning_list .phoneSuning_right{float: left;display: block;width: 100px;margin-top: 65px;
+    padding-left: 10px;margin-bottom: 10px;}
+.top_nav .top_nav_right .phoneSuning_list .phoneSuning_right a.ng_app{float: left;overflow: hidden;height: 30px;width: 30px;
+    margin-bottom: 20px;}
+.top_nav .top_nav_right .phoneSuning_list .phoneSuning_right a.ng_app img{height: 30px;width: 30px;display: block;}
+.top_nav .top_nav_right .phoneSuning_list a.ng_img{margin-left: 10px;}
+.top_nav .top_nav_right .phoneSuning_list a.ng_close{position: absolute;display: inline-block;font-size: 22px;width: 24px;
+    height: 24px;top: 2px;right: 1px;transition: transform 0.2s ease-in 0s;}
+.top_nav .top_nav_right .phoneSuning_list a.ng_close:hover{text-decoration: none;transform: rotate(360deg);}
+
+/*背景图片显示*/
+.floor-main .col4 .list li .num {
+    background: url("../img/s_pic.png");
+}
+.ng_sort_list .go_right .cate-list dl dt{
+    background: url(../img/s_pic1.png) no-repeat -270px -41px;
+}
+.ng_nav_index .ng_nav_list li a .new{
+    background: url(../img/s_pic1.png) no-repeat -16px -205px;
+}
+.ng_nav_index .ng_nav_list li a .hot{
+    background: url(../img/s_pic1.png) no-repeat 0 -205px;
+}
+.ng_main_pic .banner-prev .arr{
+    background: url(../img/s_pic.png) no-repeat -32px 0;
+}
+.ng_main_pic .banner-next .arr{
+    background: url(../img/s_pic.png) no-repeat -50px 0;
+}
+.banner-case .box-all .title i{
+    background: url(../img/s_pic.png) 0 -31px;
+}
+.floor-special .col2 .item0{
+    background: url("../img/tese3.png") no-repeat;
+}
+.right-sidebar{font: 12px/1.5 arial,tahoma,\5b8b\4f53;}
+.right-sidebar .sidebar-tabs .sidebar-tab .tab-icon, .right-sidebar .sidebar-tabs .sidebar-tab .tab-icon-tip{
+    background: url("../img/sidebaricon.png") no-repeat;
+}
